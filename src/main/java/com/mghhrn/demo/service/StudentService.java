@@ -8,5 +8,7 @@ public interface StudentService {
 
     List<Student> getAllStudents();
 
-    Student randomUpdateOnStudent(Long studentId);
+    Student randomUpdateOnStudent(Long studentId, String newFirstName) throws Exception;
+
+    void renameAllExcept(String newFirstName, Long exptionalStudentId);
 }
